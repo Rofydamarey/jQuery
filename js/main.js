@@ -10,7 +10,15 @@ $('.close').on('click',function () {
     $('.navy').animate({width:'toggle'},1000)
 })
 
-
+$("#Menu a").on('click',function(){
+    
+    var smooth= $(this).attr("href");
+    
+    var scrollSection = $(smooth).offset().top;
+    
+    $("html , body").animate({scrollTop:scrollSection},2000);
+    
+})
 $(function () {
     $('.loader').fadeOut(1000,function () {
         $('.loading').fadeIn(1000,function () {
