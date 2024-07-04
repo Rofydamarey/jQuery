@@ -1,0 +1,202 @@
+
+:root{
+    scroll-behavior: auto;
+}
+::-webkit-scrollbar {
+    width: 0.625rem;
+ }
+ 
+ ::-webkit-scrollbar-track {
+    background-color: #000000;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+    background-color: #881e04;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(236, 3, 3, 0.5) inset;
+ }
+ a{
+    text-decoration: none;
+    color: white;
+ }
+ .loading{
+    background-color: #000000e4;
+    position: fixed;
+    inset: 0;
+    display: grid;
+    z-index: 22;
+    place-content: center;
+ }
+ .loader, .loader:before, .loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation-fill-mode: both;
+    animation: bblFadInOut 1.8s infinite ease-in-out;
+  }
+  .loader {
+    color:#fff;
+    font-size: 7px;
+    position: relative;
+    text-indent: -9999em;
+    transform: translateZ(0);
+    animation-delay: -0.16s;
+  }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  .loader:before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 3.5em;
+  }
+  
+  @keyframes bblFadInOut {
+    0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+    40% { box-shadow: 0 2.5em 0 0 }
+  }
+      
+#home {
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    position: relative;
+    background-image: linear-gradient(rgba(255, 5, 5, 0.4), rgba(255, 5, 5, 0.4)), url(../images/events-heavenly-header.jpg);
+
+    .title{
+    font-size: 60px;
+}
+.main-text{
+    padding-top: 18%;
+    
+}
+ .sidebar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+    top: 0px;
+    left: 0;
+   
+}
+.navy{
+    display: none;
+    
+}
+.navy a {
+    padding: 0px 42px 36px 1px;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.5s;
+    display: block;
+    color: white;
+}
+.navy a:hover{
+    color: #8a0606;
+}
+.nav-toggle{
+    background-color:  rgba(214, 46, 51, 0.6);
+}
+.nav-toggle i{
+    font-size: 30px;
+   
+   
+}
+.close{
+    position: relative;
+    right: -80px;
+    top: 0;
+}
+}
+.head{
+    cursor: pointer;
+   background-color:  rgba(214, 46, 51, 0.6);
+    
+}
+@media (max-width:567px) {
+    .main-text{
+       padding-top: 60%;
+        
+    }
+}
+
+/***counter***/
+#Details{
+        background-size: cover;
+        background-position: center center;
+        height: 50vh;
+        position: relative;
+        background-image: linear-gradient(rgba(255, 5, 5, 0.4), rgba(255, 5, 5, 0.4)), url(../images/invitation-2508607__340.jpg);
+
+        .container
+        {
+            padding: 100px 0px;
+        }
+
+        .row {
+        
+            display: flex;
+               margin-right: -17px;
+               margin-left: 166px;
+               margin-top: 50px;
+               text-align: center;
+           }
+           .col-md-3{
+            padding: 50px;
+            border: 1px solid #FFF;
+            font-weight: 500;
+            font-size: 30px;
+            width: 22%;
+           }
+
+}
+@media (max-width:567px) {
+    #Details{
+        height: auto;
+    }
+    .container{
+        padding: 0;
+    }
+ .row{
+    display: flex;
+    flex-direction: column;
+ }
+ .col-md-3{
+   width: 75px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+}
+
+
+/****contact us*****/
+#contact{
+    margin-top:15%;
+}
+.social-list i{
+    margin-right: 10px;
+    border:1px solid #999;
+    width:40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    text-align: center;
+
+}
+.social-list i:hover{
+    color:#fff;
+    background-color: red;
+    border:1px solid red;
+}
+form .btn{
+  color: #fff;
+    padding: 10px 20px;
+    background-color: rgb(215, 0, 0);
+}
